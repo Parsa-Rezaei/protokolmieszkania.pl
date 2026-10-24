@@ -1,0 +1,7 @@
+# Skopiuj do .dev.vars (plik NIE trafia do repozytorium) tylko do testów lokalnych: npm run serve
+# W produkcji te wartości ustawiasz w Cloudflare Pages -> Settings -> Variables and Secrets.
+STRIPE_SECRET_KEY=rk_test_WPISZ_KLUCZ_TESTOWY
+STRIPE_PAYMENT_LINK_ID=plink_WPISZ_ID
+SEAL_PRIVATE_JWK={"kty":"EC","crv":"P-256","x":"...","y":"...","d":"..."}
+MIN_AMOUNT_GROSZE=999
+ALLOW_TEST_PAYMENTS=true

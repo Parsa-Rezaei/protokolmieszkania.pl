@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://static.cloudflareinsights.com; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://cloudflareinsights.com; manifest-src 'self'; form-action 'self'; base-uri 'none'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Protokół zdawczo-odbiorczy mieszkania online – PDF ze zdjęciami i podpisem | ProtokolZdawczy.pl</title>
+  <meta name="description" content="Generator protokołu zdawczo-odbiorczego mieszkania na telefonie: stany liczników ze zdjęciami, klucze, stan pomieszczeń, podpisy palcem na ekranie i gotowy PDF. Kalkulator taksy notarialnej, PCC i ryczałtu od najmu 2026.">
+  <link rel="canonical" href="https://protokolzdawczy.pl/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#1f57c3">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="ProtokolZdawczy.pl">
+  <meta property="og:title" content="Protokół zdawczo-odbiorczy mieszkania – zdjęcia liczników i podpis na ekranie">
+  <meta property="og:description" content="Spisz liczniki, zrób zdjęcia, podpiszcie palcem na telefonie i pobierz gotowy protokół PDF. Dane zostają na Twoim urządzeniu.">
+  <meta property="og:url" content="https://protokolzdawczy.pl/">
+  <meta property="og:image" content="https://protokolzdawczy.pl/og-image.png">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/app.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Kreator Protokołu Zdawczo-Odbiorczego Mieszkania",
+    "alternateName": "ProtokolZdawczy.pl",
+    "url": "https://protokolzdawczy.pl/",
+    "inLanguage": "pl-PL",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web (Android, iOS, Windows, macOS)",
+    "description": "Generator protokołu zdawczo-odbiorczego mieszkania online ze zdjęciami liczników, podpisami na ekranie dotykowym i skrótem SHA-256 w PDF, z kalkulatorem taksy notarialnej, PCC i ryczałtu od najmu prywatnego.",
+    "featureList": [
+      "Stany liczników prądu (G11/G12), wody zimnej i ciepłej, gazu i C.O. ze zdjęciami",
+      "Spis kluczy, pilotów i chipów",
+      "Stan techniczny pomieszczeń i wyposażenia ze zdjęciami usterek",
+      "Dwa podpisy palcem na ekranie telefonu",
+      "PDF A4 ze skrótem SHA-256",
+      "Kalkulator taksy notarialnej, PCC 2% i opłat sądowych za wpis do księgi wieczystej",
+      "Kalkulator ryczałtu od najmu prywatnego 8,5% / 12,5% i rentowności najmu"
+    ],
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "PLN",
+      "lowPrice": "0",
+      "highPrice": "9.99",
+      "offerCount": "2"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Czym jest protokół zdawczo-odbiorczy mieszkania?",
+        "acceptedAnswer": { "@type": "Answer", "text": "To dokument sporządzany przy przekazaniu mieszkania – na początku i na końcu najmu albo przy sprzedaży. Strony zapisują w nim stany liczników, liczbę przekazanych kluczy oraz stan pomieszczeń i wyposażenia. Jest podstawowym dowodem przy rozliczaniu kaucji, mediów i ewentualnych szkód." }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy podpis złożony palcem na ekranie telefonu jest ważny?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Przepisy nie wymagają szczególnej formy protokołu zdawczo-odbiorczego. Podpis złożony na ekranie jest zwykłym podpisem elektronicznym – nie jest kwalifikowanym podpisem elektronicznym. Zgodnie z art. 25 ust. 1 rozporządzenia eIDAS podpisowi elektronicznemu nie można odmówić skutku prawnego ani dopuszczalności jako dowodu tylko dlatego, że ma postać elektroniczną. Jeżeli Wasza umowa wymaga formy pisemnej, wydrukujcie protokół i podpiszcie go odręcznie." }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy moje dane i zdjęcia są wysyłane na serwer?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Nie. Protokół, zdjęcia i podpisy są przetwarzane wyłącznie w przeglądarce na Twoim urządzeniu. Przy płatnej pieczęci czasu do serwera trafia tylko 64-znakowy skrót SHA-256 dokumentu, z którego nie da się odtworzyć jego treści." }
+      },
+      {
+        "@type": "Question",
+        "name": "Ile wynosi maksymalna taksa notarialna przy zakupie mieszkania?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Zależy od wartości mieszkania. Dla wartości od 60 000 zł do 1 000 000 zł maksymalna taksa netto to 1010 zł plus 0,4% od nadwyżki ponad 60 000 zł. Przykład: przy cenie 500 000 zł taksa wynosi maksymalnie 2770 zł netto, czyli 3407,10 zł z 23% VAT. Do tego dochodzą wypisy aktu (6 zł netto za stronę), opłaty sądowe za wpisy w księdze wieczystej i – na rynku wtórnym – PCC 2%." }
+      },
+      {
+        "@type": "Question",
+        "name": "Kiedy nie płaci się podatku PCC przy zakupie mieszkania?",
+        "acceptedAnswer": { "@type": "Answer", "text": "PCC 2% nie dotyczy zakupu od dewelopera (rynek pierwotny), bo taka sprzedaż jest opodatkowana VAT. Od 31 sierpnia 2023 r. zwolniony z PCC jest też zakup pierwszego mieszkania lub domu na rynku wtórnym przez osobę fizyczną, która wcześniej nie miała prawa własności mieszkania ani domu (art. 9 pkt 17 ustawy o PCC), z wyjątkiem udziału do 50% nabytego w spadku." }
+      },
+      {
+        "@type": "Question",
+        "name": "Jaki jest ryczałt od najmu prywatnego w 2026 roku?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Przychody z najmu prywatnego opodatkowane są ryczałtem: 8,5% do 100 000 zł przychodu rocznie i 12,5% od nadwyżki. Kosztów nie odlicza się. Małżonkowie mają limit 100 000 zł każdy, a gdy złożą oświadczenie, że całość rozlicza jeden z nich, jego limit wynosi 200 000 zł." }
+      }
+    ]
+  }
+  </script>
+  <script src="/assets/config.js" defer></script>
+  <script src="/assets/core.js" defer></script>
+  <script src="/assets/calc.js" defer></script>
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Przejdź do treści</a>
+
+  <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
+    <div class="mx-auto flex max-w-5xl items-center gap-3 px-4 py-2">
+      <a href="#protokol" class="flex shrink-0 items-center gap-2 font-extrabold text-brand-800" aria-label="ProtokolZdawczy.pl – strona główna">
+        <svg class="h-7 w-7" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1f57c3"/><path d="M9 8h10l4 4v12a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" fill="#fff"/><path d="M11.5 18.5l3 3 6-7" stroke="#1f57c3" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="hidden sm:inline">ProtokolZdawczy.pl</span>
+      </a>
+      <nav class="-mx-1 flex flex-1 gap-1 overflow-x-auto px-1 py-1" aria-label="Główna nawigacja">
+        <a class="tab" href="#protokol" data-tab="protokol">Protokół</a>
+        <a class="tab" href="#notariusz" data-tab="notariusz">Taksa notarialna</a>
+        <a class="tab" href="#najem" data-tab="najem">Najem i ROI</a>
+        <a class="tab" href="#weryfikacja" data-tab="weryfikacja">Weryfikacja</a>
+        <a class="tab" href="#faq" data-tab="faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="mx-auto max-w-5xl px-4 pb-24">
+    <noscript>
+      <div class="notice-error mt-4">Ta aplikacja wymaga włączonej obsługi JavaScript w przeglądarce.</div>
+    </noscript>
+
+    <!-- ===================================================== MODUŁ 1: PROTOKÓŁ -->
+    <section id="protokol" data-view="protokol" aria-labelledby="h-protokol">
+      <div class="py-6 sm:py-10">
+        <h1 id="h-protokol" class="text-2xl font-extrabold leading-tight text-slate-900 sm:text-4xl">
+          Protokół zdawczo-odbiorczy mieszkania
+          <span class="block text-lg font-semibold text-brand-700 sm:text-2xl">ze zdjęciami liczników i podpisem na ekranie – gotowy PDF</span>
+        </h1>
+        <p class="mt-3 max-w-3xl text-slate-600">Stojąc w mieszkaniu, wpisz stany liczników, zrób zdjęcia telefonem, opisz stan pomieszczeń, podpiszcie się palcem na ekranie i pobierz jeden plik PDF A4. Kreator działa dla najmu zwykłego, najmu okazjonalnego i sprzedaży mieszkania.</p>
+        <ul class="mt-4 grid gap-2 text-sm text-slate-700 sm:grid-cols-2">
+          <li class="flex gap-2"><span class="font-bold text-emerald-600" aria-hidden="true">✓</span>Dane i zdjęcia nie opuszczają Twojego urządzenia</li>
+          <li class="flex gap-2"><span class="font-bold text-emerald-600" aria-hidden="true">✓</span>Zdjęcia liczników i usterek osadzone w PDF</li>
+          <li class="flex gap-2"><span class="font-bold text-emerald-600" aria-hidden="true">✓</span>Dwa podpisy palcem na ekranie telefonu</li>
+          <li class="flex gap-2"><span class="font-bold text-emerald-600" aria-hidden="true">✓</span>Skrót SHA-256 chroniący przed podmianą treści</li>
+        </ul>
+      </div>
+
+      <form id="protocol-form" class="space-y-5" novalidate autocomplete="off">
+        <!-- Krok 1 -->
+        <fieldset class="card space-y-4">
+          <legend class="step-title"><span class="step-num">1</span>Rodzaj przekazania i lokal</legend>
+          <div class="grid gap-2 sm:grid-cols-2" role="radiogroup" aria-label="Rodzaj transakcji">
+            <label class="choice"><input type="radio" name="type" value="najem" data-bind="type" class="mt-1" checked><span><strong>Najem zwykły</strong><br><span class="text-slate-500">wydanie lub zwrot mieszkania</span></span></label>
+            <label class="choice"><input type="radio" name="type" value="najem_okazjonalny" data-bind="type" class="mt-1"><span><strong>Najem okazjonalny</strong><br><span class="text-slate-500">umowa z oświadczeniem u notariusza</span></span></label>
+            <label class="choice"><input type="radio" name="type" value="sprzedaz_wtorny" data-bind="type" class="mt-1"><span><strong>Sprzedaż – rynek wtórny</strong><br><span class="text-slate-500">od dotychczasowego właściciela</span></span></label>
+            <label class="choice"><input type="radio" name="type" value="sprzedaz_pierwotny" data-bind="type" class="mt-1"><span><strong>Sprzedaż – rynek pierwotny</strong><br><span class="text-slate-500">odbiór od dewelopera</span></span></label>
+          </div>
+          <fieldset id="direction-wrap" class="space-y-2">
+            <legend class="label">Kierunek przekazania</legend>
+            <div class="grid gap-2 sm:grid-cols-2">
+              <label class="choice"><input type="radio" name="direction" value="wydanie" data-bind="direction" class="mt-1" checked><span><strong>Wydanie mieszkania najemcy</strong><br><span class="text-slate-500">początek najmu: Wynajmujący → Najemca</span></span></label>
+              <label class="choice"><input type="radio" name="direction" value="zwrot" data-bind="direction" class="mt-1"><span><strong>Zwrot mieszkania wynajmującemu</strong><br><span class="text-slate-500">koniec najmu: Najemca → Wynajmujący</span></span></label>
+            </div>
+          </fieldset>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label class="label" for="f-date">Data przekazania</label>
+              <input class="input" id="f-date" type="date" data-bind="date" required>
+            </div>
+            <div>
+              <label class="label" for="f-city">Miejscowość</label>
+              <input class="input" id="f-city" type="text" data-bind="city" maxlength="80" value="Łódź" autocomplete="address-level2">
+            </div>
+            <div class="sm:col-span-2">
+              <label class="label" for="f-address">Dokładny adres lokalu</label>
+              <input class="input" id="f-address" type="text" data-bind="address" maxlength="200" placeholder="np. ul. Piotrkowska 100 m. 12, 90-001 Łódź" required>
+            </div>
+            <div>
+              <label class="label" for="f-contract-date">Data umowy (najmu / sprzedaży)</label>
+              <input class="input" id="f-contract-date" type="date" data-bind="contractDate">
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Krok 2 -->
+        <fieldset class="card space-y-4">
+          <legend class="step-title"><span class="step-num">2</span>Strony protokołu</legend>
+          <div class="grid gap-6 md:grid-cols-2">
+            <div class="space-y-3">
+              <h3 class="font-semibold text-slate-800" id="giver-role">Przekazujący (Wynajmujący)</h3>
+              <div><label class="label" for="g-name">Imię i nazwisko / nazwa firmy</label><input class="input" id="g-name" type="text" data-bind="giver.name" maxlength="120" autocomplete="off" required></div>
+              <div><label class="label" for="g-id">PESEL lub nr dowodu osobistego <span class="font-normal text-slate-400">(opcjonalnie)</span></label><input class="input" id="g-id" type="text" data-bind="giver.idNumber" maxlength="40" autocomplete="off"></div>
+              <div><label class="label" for="g-phone">Telefon</label><input class="input" id="g-phone" type="tel" data-bind="giver.phone" maxlength="30" inputmode="tel" autocomplete="off"></div>
+              <div><label class="label" for="g-email">E-mail</label><input class="input" id="g-email" type="email" data-bind="giver.email" maxlength="120" inputmode="email" autocomplete="off"></div>
+            </div>
+            <div class="space-y-3">
+              <h3 class="font-semibold text-slate-800" id="receiver-role">Przejmujący (Najemca)</h3>
+              <div><label class="label" for="r-name">Imię i nazwisko / nazwa firmy</label><input class="input" id="r-name" type="text" data-bind="receiver.name" maxlength="120" autocomplete="off" required></div>
+              <div><label class="label" for="r-id">PESEL lub nr dowodu osobistego <span class="font-normal text-slate-400">(opcjonalnie)</span></label><input class="input" id="r-id" type="text" data-bind="receiver.idNumber" maxlength="40" autocomplete="off"></div>
+              <div><label class="label" for="r-phone">Telefon</label><input class="input" id="r-phone" type="tel" data-bind="receiver.phone" maxlength="30" inputmode="tel" autocomplete="off"></div>
+              <div><label class="label" for="r-email">E-mail</label><input class="input" id="r-email" type="email" data-bind="receiver.email" maxlength="120" inputmode="email" autocomplete="off"></div>
+            </div>
+          </div>
+          <p class="hint">PESEL to dane wrażliwe na kradzież tożsamości – wpisuj go tylko, jeśli strony tego potrzebują. Wystarczy imię, nazwisko i numer dokumentu.</p>
+        </fieldset>
+
+        <!-- Krok 3 -->
+        <fieldset class="card space-y-4">
+          <legend class="step-title"><span class="step-num">3</span>Stan liczników ze zdjęciami</legend>
+          <p class="text-sm text-slate-600">Wpisz numer seryjny i odczyt każdego licznika, a potem zrób mu zdjęcie. Zdjęcia są automatycznie zmniejszane (maks. 800 px, JPEG), oznaczane datą i godziną, a dane GPS z aparatu są usuwane.</p>
+          <div id="meters-list" class="space-y-3"></div>
+          <div class="flex flex-wrap items-end gap-2">
+            <div class="min-w-[12rem] flex-1">
+              <label class="label" for="add-meter-kind">Dodaj kolejny licznik</label>
+              <select id="add-meter-kind" class="input">
+                <option value="woda_zimna">Woda zimna (np. drugi licznik w łazience)</option>
+                <option value="woda_ciepla">Woda ciepła</option>
+                <option value="co">C.O. / podzielnik ciepła</option>
+                <option value="prad">Energia elektryczna</option>
+                <option value="gaz">Gaz</option>
+                <option value="inny">Inny licznik</option>
+              </select>
+            </div>
+            <button type="button" id="add-meter-btn" class="btn-secondary">+ Dodaj licznik</button>
+          </div>
+        </fieldset>
+
+        <!-- Krok 4 -->
+        <fieldset class="card space-y-4">
+          <legend class="step-title"><span class="step-num">4</span>Klucze i urządzenia dostępowe</legend>
+          <div class="grid grid-cols-2 gap-3 sm:grid-cols-3">
+            <div><label class="label" for="k-entrance">Drzwi wejściowe (szt.)</label><input class="input" id="k-entrance" type="number" min="0" max="99" step="1" inputmode="numeric" data-bind="keys.entrance" data-type="int"></div>
+            <div><label class="label" for="k-mailbox">Skrzynka pocztowa (szt.)</label><input class="input" id="k-mailbox" type="number" min="0" max="99" step="1" inputmode="numeric" data-bind="keys.mailbox" data-type="int"></div>
+            <div><label class="label" for="k-basement">Piwnica / komórka (szt.)</label><input class="input" id="k-basement" type="number" min="0" max="99" step="1" inputmode="numeric" data-bind="keys.basement" data-type="int"></div>
+            <div><label class="label" for="k-remote">Piloty brama / garaż (szt.)</label><input class="input" id="k-remote" type="number" min="0" max="99" step="1" inputmode="numeric" data-bind="keys.remote" data-type="int"></div>
+            <div><label class="label" for="k-intercom">Chip / pastylka domofonu (szt.)</label><input class="input" id="k-intercom" type="number" min="0" max="99" step="1" inputmode="numeric" data-bind="keys.intercom" data-type="int"></div>
+            <div><label class="label" for="k-other">Inne (szt.)</label><input class="input" id="k-other" type="number" min="0" max="99" step="1" inputmode="numeric" data-bind="keys.other" data-type="int"></div>
+          </div>
+          <div>
+            <label class="label" for="k-note">Uwagi do kluczy</label>
+            <input class="input" id="k-note" type="text" data-bind="keysNote" maxlength="300" placeholder="np. klucz do skrzynki jest dorobiony, pilot wymaga nowej baterii">
+          </div>
+        </fieldset>
+
+        <!-- Krok 5 -->
+        <fieldset class="card space-y-4">
+          <legend class="step-title"><span class="step-num">5</span>Pomieszczenia i stan wyposażenia</legend>
+          <p class="text-sm text-slate-600">Dla każdego elementu wybierz stan. Przy uszkodzeniach opisz usterkę i dodaj do 3 zdjęć. Możesz dodawać i usuwać pomieszczenia oraz elementy.</p>
+          <datalist id="item-suggestions">
+            <option value="Ściany i podłogi"><option value="Okna"><option value="Drzwi"><option value="Sprzęt AGD"><option value="Lodówka"><option value="Pralka"><option value="Płyta grzejna / kuchenka"><option value="Piekarnik"><option value="Zmywarka"><option value="Meble"><option value="Zabudowa kuchenna"><option value="Szafa"><option value="Łóżko"><option value="Armatura"><option value="Wanna / kabina prysznicowa"><option value="Umywalka"><option value="WC"><option value="Oświetlenie"><option value="Gniazdka i włączniki"><option value="Grzejniki"><option value="Rolety / żaluzje"><option value="Drzwi balkonowe">
+          </datalist>
+          <div id="rooms-list" class="space-y-4"></div>
+          <div class="flex flex-wrap items-end gap-2">
+            <div class="min-w-[12rem] flex-1">
+              <label class="label" for="add-room-name">Dodaj pomieszczenie</label>
+              <input id="add-room-name" class="input" type="text" maxlength="60" placeholder="np. Pokój dziecięcy, Garderoba, Garaż">
+            </div>
+            <button type="button" id="add-room-btn" class="btn-secondary">+ Dodaj pomieszczenie</button>
+          </div>
+        </fieldset>
+
+        <!-- Krok 6 -->
+        <fieldset class="card space-y-4">
+          <legend class="step-title"><span class="step-num">6</span>Kaucja i uwagi</legend>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label class="label" for="f-deposit">Kaucja (zł) <span class="font-normal text-slate-400">(opcjonalnie)</span></label>
+              <input class="input" id="f-deposit" type="text" inputmode="decimal" data-bind="deposit" maxlength="30" placeholder="np. 3 000">
+            </div>
+          </div>
+          <div>
+            <label class="label" for="f-notes">Uwagi stron, zastrzeżenia, ustalenia</label>
+            <textarea class="input min-h-[7rem]" id="f-notes" data-bind="notes" maxlength="4000" placeholder="np. Najemca zgłasza zarysowanie blatu kuchennego – istniejące przed przekazaniem (fot. w pkt 3). Strony ustalają termin naprawy uszczelki do 30.11."></textarea>
+          </div>
+        </fieldset>
+
+        <!-- Krok 7 -->
+        <fieldset class="card space-y-4" id="signatures-card">
+          <legend class="step-title"><span class="step-num">7</span>Podpisy na ekranie</legend>
+          <div class="notice-info">Podpiszcie się palcem lub rysikiem na końcu, gdy wszystkie dane są wpisane. <strong>Każda zmiana danych po podpisaniu automatycznie usuwa podpisy</strong> – dzięki temu nikt nie może zmienić treści protokołu po jego podpisaniu.</div>
+          <div class="grid gap-5 md:grid-cols-2">
+            <div>
+              <div class="mb-1 flex items-center justify-between">
+                <span class="label mb-0" id="sig-giver-label">Podpis Przekazującego (Wynajmujący)</span>
+                <button type="button" class="btn-ghost min-h-[36px] px-2 py-1 text-xs" data-clear-sig="giver">Wyczyść podpis</button>
+              </div>
+              <canvas id="sig-giver" class="sig-canvas" aria-labelledby="sig-giver-label" role="img"></canvas>
+              <p class="hint" id="sig-giver-status">Brak podpisu</p>
+            </div>
+            <div>
+              <div class="mb-1 flex items-center justify-between">
+                <span class="label mb-0" id="sig-receiver-label">Podpis Przejmującego (Najemca)</span>
+                <button type="button" class="btn-ghost min-h-[36px] px-2 py-1 text-xs" data-clear-sig="receiver">Wyczyść podpis</button>
+              </div>
+              <canvas id="sig-receiver" class="sig-canvas" aria-labelledby="sig-receiver-label" role="img"></canvas>
+              <p class="hint" id="sig-receiver-status">Brak podpisu</p>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Krok 8 -->
+        <section class="card space-y-4" id="generate-card" aria-labelledby="h-generate">
+          <h2 id="h-generate" class="step-title"><span class="step-num">8</span>Pobierz protokół PDF</h2>
+          <div id="payment-status" hidden></div>
+          <ul id="gen-summary" class="space-y-1 text-sm"></ul>
+          <div class="grid gap-3 sm:grid-cols-2">
+            <button type="button" id="btn-pdf-full" class="btn-pay min-h-[56px] text-base">
+              <span data-mode="stripe">Pobierz pełny protokół PDF ze zdjęciami i podpisami cyfrowymi – <span data-price>9,99 zł</span></span>
+              <span data-mode="free">Pobierz pełny protokół PDF ze zdjęciami i podpisami</span>
+            </button>
+            <button type="button" id="btn-pdf-basic" class="btn-secondary min-h-[56px]">
+              <span data-mode="stripe">Bezpłatny podgląd PDF (sam tekst, bez zdjęć i podpisów)</span>
+              <span data-mode="free">Wersja do druku i odręcznego podpisu (bez zdjęć)</span>
+            </button>
+          </div>
+          <p class="hint" data-mode="stripe">Płatność BLIK lub kartą obsługuje Stripe. Pełny protokół zawiera zdjęcia, oba podpisy, skrót SHA-256 oraz pieczęć czasu serwera z kodem QR do weryfikacji. Po płatności przez 24 godziny możesz poprawić i ponownie pobrać protokół.</p>
+
+          <div id="pdf-progress" class="notice-info" hidden role="status">Generowanie PDF… To może potrwać kilka sekund.</div>
+          <div id="pdf-result" class="notice-ok space-y-3" hidden>
+            <p class="font-semibold">Protokół PDF jest gotowy.</p>
+            <p class="break-all text-xs">Skrót SHA-256: <span id="pdf-hash" class="font-mono"></span></p>
+            <div class="flex flex-wrap gap-2">
+              <a id="pdf-download" class="btn-primary" href="#" download>Pobierz PDF</a>
+              <button type="button" id="pdf-share" class="btn-secondary" hidden>Udostępnij (e-mail, WhatsApp…)</button>
+            </div>
+            <p class="text-xs">Wyślij PDF drugiej stronie. Zachowaj też plik danych (.json) – pozwala sprawdzić, że PDF nie został zmieniony.</p>
+          </div>
+
+          <details class="rounded-xl border border-slate-200 p-3">
+            <summary class="text-sm font-semibold">Plik danych, szkic i prywatność</summary>
+            <div class="mt-3 space-y-3 text-sm">
+              <label class="flex items-start gap-2"><input type="checkbox" id="autosave-toggle" class="mt-1" checked><span>Zapisuj automatycznie szkic na tym urządzeniu (pamięć przeglądarki). Szkic starszy niż 7 dni jest usuwany przy kolejnym otwarciu strony. Szkic nie jest wysyłany do internetu.</span></label>
+              <div class="flex flex-wrap gap-2">
+                <button type="button" id="btn-export-json" class="btn-secondary">Zapisz plik danych (.json)</button>
+                <label class="btn-secondary cursor-pointer">Wczytaj plik danych<input type="file" id="import-json" accept="application/json,.json" class="sr-only"></label>
+                <button type="button" id="btn-clear-all" class="btn-danger">Usuń wszystkie dane z urządzenia</button>
+              </div>
+              <p class="hint">Plik danych zawiera dane osobowe i zdjęcia. Przechowuj go bezpiecznie i nie publikuj.</p>
+            </div>
+          </details>
+        </section>
+      </form>
+    </section>
+
+    <!-- ===================================================== MODUŁ 2: NOTARIUSZ -->
+    <section id="notariusz" data-view="notariusz" hidden aria-labelledby="h-notariusz" class="space-y-5 py-6">
+      <div>
+        <h2 id="h-notariusz" class="text-2xl font-extrabold sm:text-3xl">Kalkulator taksy notarialnej, PCC i opłat sądowych 2026</h2>
+        <p class="mt-2 text-slate-600">Maksymalna taksa notarialna według § 3 rozporządzenia Ministra Sprawiedliwości w sprawie maksymalnych stawek taksy notarialnej, 23% VAT, wypisy aktu, PCC 2% na rynku wtórnym i opłaty sądowe za wpisy w księdze wieczystej.</p>
+      </div>
+      <div class="grid gap-5 lg:grid-cols-2">
+        <form class="card space-y-4" id="notary-form" novalidate autocomplete="off">
+          <div>
+            <label class="label" for="n-value">Cena / wartość rynkowa mieszkania (zł)</label>
+            <input class="input text-lg" id="n-value" type="text" inputmode="decimal" maxlength="20" value="500 000">
+          </div>
+          <div class="grid grid-cols-2 gap-2" role="radiogroup" aria-label="Rynek">
+            <label class="choice"><input type="radio" name="n-market" value="wtorny" class="mt-1" checked><span><strong>Rynek wtórny</strong></span></label>
+            <label class="choice"><input type="radio" name="n-market" value="pierwotny" class="mt-1"><span><strong>Rynek pierwotny</strong><br><span class="text-slate-500">deweloper, VAT w cenie</span></span></label>
+          </div>
+          <label class="flex items-start gap-2 text-sm" id="n-first-home-wrap"><input type="checkbox" id="n-first-home" class="mt-1"><span>Kupuję pierwsze mieszkanie – zwolnienie z PCC (art. 9 pkt 17 ustawy o PCC). <span class="text-slate-500">Warunek: nie masz i nie miałeś/aś prawa własności mieszkania ani domu (wyjątek: udział do 50% ze spadku).</span></span></label>
+          <label class="flex items-start gap-2 text-sm"><input type="checkbox" id="n-mortgage" class="mt-1" checked><span>Kupuję na kredyt hipoteczny (wpis hipoteki: +200 zł opłaty sądowej)</span></label>
+          <label class="flex items-start gap-2 text-sm" id="n-newkw-wrap" hidden><input type="checkbox" id="n-newkw" class="mt-1" checked><span>Zakładana jest nowa księga wieczysta dla lokalu (+100 zł)</span></label>
+          <label class="flex items-start gap-2 text-sm"><input type="checkbox" id="n-kwapp" class="mt-1" checked><span>Notariusz sporządza i wysyła wniosek do księgi wieczystej (do 200 zł netto + VAT)</span></label>
+          <label class="flex items-start gap-2 text-sm"><input type="checkbox" id="n-group1" class="mt-1"><span>Strony należą do I grupy podatkowej (np. rodzice – dzieci) – limit taksy 7 500 zł zamiast 10 000 zł przy wartości powyżej 2 mln zł</span></label>
+          <div class="grid grid-cols-2 gap-3">
+            <div><label class="label" for="n-pages">Liczba stron aktu</label><input class="input" id="n-pages" type="number" min="0" max="500" step="1" inputmode="numeric" value="10"></div>
+            <div><label class="label" for="n-copies">Liczba wypisów</label><input class="input" id="n-copies" type="number" min="0" max="50" step="1" inputmode="numeric" value="4"></div>
+          </div>
+          <p class="hint">Wypisy zwykle otrzymują: kupujący, sprzedający, bank, sąd wieczystoksięgowy i urząd skarbowy. Liczbę potwierdza kancelaria.</p>
+        </form>
+        <div class="card space-y-3" aria-live="polite">
+          <h2 class="text-lg font-bold">Wynik</h2>
+          <p class="text-sm text-slate-600" id="n-bracket-info"></p>
+          <dl id="n-results"></dl>
+          <div class="notice-warn text-xs">Kalkulator podaje <strong>stawki maksymalne</strong> – notariusz może pobrać mniej. Dla niektórych czynności rozporządzenie przewiduje stawki obniżone, a kancelaria może naliczyć dodatkowe czynności (np. oświadczenie o ustanowieniu hipoteki, poddanie się egzekucji). Kwoty mają charakter informacyjny i nie są poradą prawną ani podatkową.</div>
+        </div>
+      </div>
+      <div class="card overflow-x-auto">
+        <h2 class="mb-3 text-lg font-bold">Tabela maksymalnych stawek taksy notarialnej (netto)</h2>
+        <table class="w-full min-w-[30rem] text-left text-sm">
+          <thead><tr class="border-b border-slate-200 text-slate-500"><th class="py-2 pr-3">Wartość przedmiotu czynności</th><th class="py-2">Maksymalna taksa netto</th></tr></thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr><td class="py-2 pr-3">do 3 000 zł</td><td class="py-2">100 zł</td></tr>
+            <tr><td class="py-2 pr-3">powyżej 3 000 zł do 10 000 zł</td><td class="py-2">100 zł + 3% od nadwyżki powyżej 3 000 zł</td></tr>
+            <tr><td class="py-2 pr-3">powyżej 10 000 zł do 30 000 zł</td><td class="py-2">310 zł + 2% od nadwyżki powyżej 10 000 zł</td></tr>
+            <tr><td class="py-2 pr-3">powyżej 30 000 zł do 60 000 zł</td><td class="py-2">710 zł + 1% od nadwyżki powyżej 30 000 zł</td></tr>
+            <tr><td class="py-2 pr-3">powyżej 60 000 zł do 1 000 000 zł</td><td class="py-2">1 010 zł + 0,4% od nadwyżki powyżej 60 000 zł</td></tr>
+            <tr><td class="py-2 pr-3">powyżej 1 000 000 zł do 2 000 000 zł</td><td class="py-2">4 770 zł + 0,2% od nadwyżki powyżej 1 000 000 zł</td></tr>
+            <tr><td class="py-2 pr-3">powyżej 2 000 000 zł</td><td class="py-2">6 770 zł + 0,25% od nadwyżki powyżej 2 000 000 zł, nie więcej niż 10 000 zł (7 500 zł dla I grupy podatkowej)</td></tr>
+          </tbody>
+        </table>
+        <p class="hint mt-3">Do taksy dolicza się 23% VAT. Wypis: 6 zł netto za każdą rozpoczętą stronę. Opłaty sądowe (bez VAT): wpis własności 200 zł, wpis hipoteki 200 zł, założenie księgi wieczystej 100 zł.</p>
+      </div>
+    </section>
+
+    <!-- ===================================================== MODUŁ 2b: NAJEM -->
+    <section id="najem" data-view="najem" hidden aria-labelledby="h-najem" class="space-y-5 py-6">
+      <div>
+        <h2 id="h-najem" class="text-2xl font-extrabold sm:text-3xl">Kalkulator ryczałtu od najmu prywatnego i rentowności (ROI) 2026</h2>
+        <p class="mt-2 text-slate-600">Ryczałt od przychodów z najmu prywatnego: 8,5% do progu i 12,5% od nadwyżki. Kosztów nie odlicza się od podatku, ale uwzględniamy je w rentowności netto.</p>
+      </div>
+      <div class="grid gap-5 lg:grid-cols-2">
+        <form class="card space-y-4" id="rental-form" novalidate autocomplete="off">
+          <div class="grid grid-cols-2 gap-3">
+            <div class="col-span-2 sm:col-span-1"><label class="label" for="r-rent">Czynsz najmu miesięcznie (zł)</label><input class="input text-lg" id="r-rent" type="text" inputmode="decimal" maxlength="15" value="3 000"></div>
+            <div class="col-span-2 sm:col-span-1"><label class="label" for="r-months">Miesiące wynajmu w roku</label><input class="input text-lg" id="r-months" type="number" min="0" max="12" step="1" inputmode="numeric" value="11"></div>
+          </div>
+          <div><label class="label" for="r-other">Inne przychody z najmu rocznie (zł)</label><input class="input" id="r-other" type="text" inputmode="decimal" maxlength="15" value="0"><p class="hint">np. wynajem miejsca postojowego lub komórki</p></div>
+          <div><label class="label" for="r-costs">Roczne koszty właściciela (zł)</label><input class="input" id="r-costs" type="text" inputmode="decimal" maxlength="15" value="4 800"><p class="hint">czynsz do wspólnoty/spółdzielni, fundusz remontowy, ubezpieczenie, podatek od nieruchomości, naprawy</p></div>
+          <div><label class="label" for="r-investment">Całkowity koszt zakupu mieszkania (zł)</label><input class="input" id="r-investment" type="text" inputmode="decimal" maxlength="20" value="520 000"><p class="hint">cena + koszty notarialne i podatki + remont i wyposażenie</p></div>
+          <button type="button" id="r-use-notary" class="btn-secondary w-full">Wstaw cenę + koszty z kalkulatora notarialnego</button>
+          <fieldset class="space-y-2">
+            <legend class="label">Kto rozlicza przychód</legend>
+            <label class="choice"><input type="radio" name="r-status" value="single" class="mt-1" checked><span><strong>Jeden właściciel</strong> – próg 100 000 zł</span></label>
+            <label class="choice"><input type="radio" name="r-status" value="married" class="mt-1"><span><strong>Małżonkowie (wspólność majątkowa)</strong> – łącznie 200 000 zł<br><span class="text-slate-500">każdy z małżonków ma limit 100 000 zł; przy oświadczeniu, że całość rozlicza jeden z nich, jego limit wynosi 200 000 zł</span></span></label>
+          </fieldset>
+        </form>
+        <div class="card space-y-3" aria-live="polite">
+          <h2 class="text-lg font-bold">Wynik roczny</h2>
+          <dl id="r-results"></dl>
+          <div class="notice-warn text-xs">Od 2023 r. przychody z najmu prywatnego można opodatkować wyłącznie ryczałtem. Wynik jest szacunkiem – ryczałt płaci się w trakcie roku (miesięcznie lub kwartalnie), a rozlicza w zeznaniu PIT-28. Kalkulator nie jest poradą podatkową.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================== LEADY -->
+    <section id="leads" data-views="notariusz najem" hidden class="py-2" aria-labelledby="h-leads">
+      <div class="card space-y-4 border-brand-200">
+        <div>
+          <h2 id="h-leads" class="text-xl font-bold">Kancelarie notarialne i eksperci kredytowi w <span data-lead-city>Łodzi</span></h2>
+          <p class="mt-1 text-sm text-slate-600">Zostaw kontakt – przekażemy zapytanie współpracującej kancelarii notarialnej lub doradcy kredytowemu, który skontaktuje się z Tobą. Przekazanie zapytania jest bezpłatne.</p>
+        </div>
+        <div id="partners-list" class="grid gap-3 sm:grid-cols-2" hidden></div>
+        <form id="lead-form" class="grid gap-3 sm:grid-cols-2" novalidate autocomplete="on">
+          <div><label class="label" for="lead-name">Imię</label><input class="input" id="lead-name" type="text" maxlength="60" autocomplete="given-name" required></div>
+          <div><label class="label" for="lead-phone">Telefon</label><input class="input" id="lead-phone" type="tel" maxlength="20" inputmode="tel" autocomplete="tel" required></div>
+          <div class="sm:col-span-2"><label class="label" for="lead-email">E-mail <span class="font-normal text-slate-400">(opcjonalnie)</span></label><input class="input" id="lead-email" type="email" maxlength="120" autocomplete="email"></div>
+          <fieldset class="sm:col-span-2">
+            <legend class="label">Czego potrzebujesz?</legend>
+            <div class="flex flex-wrap gap-3 text-sm">
+              <label class="flex items-center gap-2"><input type="checkbox" name="lead-need" value="Notariusz – akt notarialny"> Notariusz</label>
+              <label class="flex items-center gap-2"><input type="checkbox" name="lead-need" value="Kredyt hipoteczny"> Kredyt hipoteczny</label>
+              <label class="flex items-center gap-2"><input type="checkbox" name="lead-need" value="Najem okazjonalny – oświadczenie"> Najem okazjonalny</label>
+              <label class="flex items-center gap-2"><input type="checkbox" name="lead-need" value="Ubezpieczenie mieszkania"> Ubezpieczenie</label>
+            </div>
+          </fieldset>
+          <div class="sm:col-span-2"><label class="label" for="lead-msg">Wiadomość <span class="font-normal text-slate-400">(opcjonalnie)</span></label><textarea class="input min-h-[5rem]" id="lead-msg" maxlength="1000" placeholder="np. kupuję mieszkanie 2-pokojowe na Bałutach, akt w grudniu"></textarea></div>
+          <label class="flex items-start gap-2 text-xs text-slate-600 sm:col-span-2"><input type="checkbox" id="lead-consent" class="mt-0.5" required><span>Wyrażam zgodę na przekazanie moich danych kontaktowych współpracującej kancelarii notarialnej lub doradcy kredytowemu w celu kontaktu w sprawie mojego zapytania. Zgodę mogę wycofać w każdej chwili. Szczegóły w <a class="text-brand-700 underline" href="/polityka-prywatnosci.html">Polityce prywatności</a>.</span></label>
+          <div class="sm:col-span-2">
+            <button type="submit" class="btn-primary w-full sm:w-auto">Wyślij zapytanie e-mailem</button>
+            <p class="hint">Otworzy się Twój program pocztowy z gotową wiadomością.</p>
+            <p id="lead-error" class="mt-2 text-sm text-red-700" hidden></p>
+            <p id="lead-fallback" class="mt-2 text-sm" hidden></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================================================== WERYFIKACJA -->
+    <section id="weryfikacja" data-view="weryfikacja" hidden aria-labelledby="h-weryfikacja" class="space-y-5 py-6">
+      <div>
+        <h2 id="h-weryfikacja" class="text-2xl font-extrabold sm:text-3xl">Weryfikacja protokołu</h2>
+        <p class="mt-2 text-slate-600">Sprawdź pieczęć czasu z pełnego protokołu PDF. Zeskanuj kod QR z protokołu aparatem telefonu albo wklej kod weryfikacyjny. Opcjonalnie wczytaj plik danych (.json), aby potwierdzić, że treść protokołu nie została zmieniona.</p>
+      </div>
+      <form class="card space-y-4" id="verify-form" novalidate autocomplete="off">
+        <div>
+          <label class="label" for="v-token">Kod weryfikacyjny pieczęci</label>
+          <textarea class="input min-h-[6rem] font-mono text-xs" id="v-token" maxlength="2000" spellcheck="false" placeholder="v1.eyJ…"></textarea>
+        </div>
+        <div>
+          <label class="label" for="v-file">Plik danych protokołu (.json) <span class="font-normal text-slate-400">(opcjonalnie)</span></label>
+          <input class="block w-full text-sm" id="v-file" type="file" accept="application/json,.json">
+          <p class="hint">Plik jest sprawdzany wyłącznie na Twoim urządzeniu.</p>
+        </div>
+        <button type="submit" class="btn-primary">Sprawdź</button>
+        <div id="v-result" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <!-- ===================================================== FAQ -->
+    <section id="faq" class="space-y-3 py-8" aria-labelledby="h-faq">
+      <h2 id="h-faq" class="text-2xl font-extrabold">Najczęstsze pytania</h2>
+      <details class="card"><summary class="font-semibold">Czym jest protokół zdawczo-odbiorczy mieszkania?</summary><p class="mt-2 text-sm text-slate-700">To dokument sporządzany przy przekazaniu mieszkania – na początku i na końcu najmu albo przy sprzedaży. Strony zapisują w nim stany liczników, liczbę przekazanych kluczy oraz stan pomieszczeń i wyposażenia. Jest podstawowym dowodem przy rozliczaniu kaucji, mediów i ewentualnych szkód.</p></details>
+      <details class="card"><summary class="font-semibold">Czy podpis złożony palcem na ekranie telefonu jest ważny?</summary><p class="mt-2 text-sm text-slate-700">Przepisy nie wymagają szczególnej formy protokołu zdawczo-odbiorczego. Podpis złożony na ekranie jest zwykłym podpisem elektronicznym – nie jest kwalifikowanym podpisem elektronicznym. Zgodnie z art. 25 ust. 1 rozporządzenia eIDAS podpisowi elektronicznemu nie można odmówić skutku prawnego ani dopuszczalności jako dowodu tylko dlatego, że ma postać elektroniczną. Jeżeli Wasza umowa wymaga formy pisemnej, wydrukujcie protokół i podpiszcie go odręcznie.</p></details>
+      <details class="card"><summary class="font-semibold">Czy moje dane i zdjęcia są wysyłane na serwer?</summary><p class="mt-2 text-sm text-slate-700">Nie. Protokół, zdjęcia i podpisy są przetwarzane wyłącznie w przeglądarce na Twoim urządzeniu. Przy płatnej pieczęci czasu do serwera trafia tylko 64-znakowy skrót SHA-256 dokumentu, z którego nie da się odtworzyć jego treści.</p></details>
+      <details class="card"><summary class="font-semibold">Ile wynosi maksymalna taksa notarialna przy zakupie mieszkania?</summary><p class="mt-2 text-sm text-slate-700">Zależy od wartości mieszkania. Dla wartości od 60 000 zł do 1 000 000 zł maksymalna taksa netto to 1010 zł plus 0,4% od nadwyżki ponad 60 000 zł. Przykład: przy cenie 500 000 zł taksa wynosi maksymalnie 2770 zł netto, czyli 3407,10 zł z 23% VAT. Do tego dochodzą wypisy aktu (6 zł netto za stronę), opłaty sądowe za wpisy w księdze wieczystej i – na rynku wtórnym – PCC 2%.</p></details>
+      <details class="card"><summary class="font-semibold">Kiedy nie płaci się podatku PCC przy zakupie mieszkania?</summary><p class="mt-2 text-sm text-slate-700">PCC 2% nie dotyczy zakupu od dewelopera (rynek pierwotny), bo taka sprzedaż jest opodatkowana VAT. Od 31 sierpnia 2023 r. zwolniony z PCC jest też zakup pierwszego mieszkania lub domu na rynku wtórnym przez osobę fizyczną, która wcześniej nie miała prawa własności mieszkania ani domu (art. 9 pkt 17 ustawy o PCC), z wyjątkiem udziału do 50% nabytego w spadku.</p></details>
+      <details class="card"><summary class="font-semibold">Jaki jest ryczałt od najmu prywatnego w 2026 roku?</summary><p class="mt-2 text-sm text-slate-700">Przychody z najmu prywatnego opodatkowane są ryczałtem: 8,5% do 100 000 zł przychodu rocznie i 12,5% od nadwyżki. Kosztów nie odlicza się. Małżonkowie mają limit 100 000 zł każdy, a gdy złożą oświadczenie, że całość rozlicza jeden z nich, jego limit wynosi 200 000 zł.</p></details>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto max-w-5xl space-y-3 px-4 py-8 text-sm text-slate-600">
+      <nav class="flex flex-wrap gap-x-5 gap-y-2" aria-label="Stopka">
+        <a class="hover:text-brand-700" href="/regulamin.html">Regulamin</a>
+        <a class="hover:text-brand-700" href="/polityka-prywatnosci.html">Polityka prywatności</a>
+        <a class="hover:text-brand-700" href="#weryfikacja">Weryfikacja protokołu</a>
+        <a class="hover:text-brand-700" href="#" id="footer-contact">Kontakt</a>
+        <a class="hover:text-brand-700" href="#" id="footer-donate" target="_blank" rel="noopener noreferrer" hidden>Postaw kawę</a>
+      </nav>
+      <p class="text-xs">Narzędzie ma charakter pomocniczy i nie stanowi porady prawnej ani podatkowej. Kalkulatory podają stawki maksymalne i szacunki według przepisów obowiązujących w 2026 r.</p>
+      <p class="text-xs">© <span id="year">2026</span> ProtokolZdawczy.pl</p>
+    </div>
+  </footer>
+
+  <!-- ===================================================== OKNO PŁATNOŚCI -->
+  <dialog id="pay-dialog" class="w-[min(32rem,calc(100%-2rem))] rounded-2xl p-0 shadow-xl" aria-labelledby="pay-title">
+    <form method="dialog" class="space-y-4 p-5" id="pay-form" novalidate>
+      <h2 id="pay-title" class="text-xl font-bold">Pełny protokół PDF – <span data-price>9,99 zł</span></h2>
+      <ul class="space-y-1 text-sm text-slate-700">
+        <li>✓ zdjęcia liczników i usterek w PDF</li>
+        <li>✓ oba podpisy z ekranu</li>
+        <li>✓ skrót SHA-256 i pieczęć czasu serwera z kodem QR</li>
+        <li>✓ możliwość poprawek i ponownego pobrania przez 24 godziny</li>
+      </ul>
+      <p class="notice-info text-xs">Płatność BLIK lub kartą obsługuje Stripe – nie widzimy danych Twojej karty ani kodu BLIK. Po płatności wrócisz na tę stronę, a Twój szkic zostanie przywrócony z pamięci tego urządzenia.</p>
+      <label class="flex items-start gap-2 text-sm"><input type="checkbox" id="pay-terms" class="mt-1" required><span>Akceptuję <a class="text-brand-700 underline" href="/regulamin.html" target="_blank" rel="noopener">Regulamin</a> i zapoznałem/am się z <a class="text-brand-700 underline" href="/polityka-prywatnosci.html" target="_blank" rel="noopener">Polityką prywatności</a>.</span></label>
+      <label class="flex items-start gap-2 text-sm"><input type="checkbox" id="pay-withdrawal" class="mt-1" required><span>Żądam natychmiastowego wykonania usługi i dostarczenia treści cyfrowej przed upływem terminu do odstąpienia od umowy. Przyjmuję do wiadomości, że po jej wykonaniu tracę prawo odstąpienia od umowy.</span></label>
+      <p id="pay-error" class="text-sm text-red-700" hidden></p>
+      <div class="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
+        <button type="button" class="btn-secondary" id="pay-cancel">Anuluj</button>
+        <button type="button" class="btn-pay" id="pay-go">Przejdź do płatności (BLIK, karta)</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="pointer-events-none fixed inset-x-0 bottom-4 z-50 flex justify-center px-4" role="status" aria-live="polite"></div>
+</body>
+</html>

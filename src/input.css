@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+  [hidden] {
+    display: none !important;
+  }
+  summary {
+    cursor: pointer;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6;
+  }
+  fieldset.card > legend {
+    float: left;
+    width: 100%;
+    padding: 0;
+  }
+  fieldset.card > legend + * {
+    clear: both;
+  }
+  .step-title {
+    @apply flex items-center gap-3 text-lg font-bold text-slate-900 sm:text-xl;
+  }
+  .step-num {
+    @apply inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-600 text-sm font-bold text-white;
+  }
+  .label {
+    @apply mb-1 block text-sm font-medium text-slate-700;
+  }
+  .hint {
+    @apply mt-1 text-xs text-slate-500;
+  }
+  .input {
+    @apply block w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-base text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200;
+  }
+  .input-sm {
+    @apply block w-full rounded-lg border border-slate-300 bg-white px-2.5 py-2 text-base text-slate-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200;
+  }
+  .btn {
+    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-brand-600 text-white hover:bg-brand-700;
+  }
+  .btn-pay {
+    @apply btn bg-emerald-600 text-white hover:bg-emerald-700;
+  }
+  .btn-secondary {
+    @apply btn border border-slate-300 bg-white text-slate-800 hover:bg-slate-50;
+  }
+  .btn-ghost {
+    @apply btn text-slate-600 hover:bg-slate-100;
+  }
+  .btn-danger {
+    @apply btn border border-red-200 bg-white text-red-700 hover:bg-red-50;
+  }
+  .btn-file {
+    @apply btn cursor-pointer border border-dashed border-brand-200 bg-brand-50 text-brand-700 hover:bg-brand-100;
+  }
+  .tab {
+    @apply inline-flex min-h-[44px] shrink-0 items-center rounded-full px-4 text-sm font-semibold text-slate-600 hover:bg-slate-100;
+  }
+  .tab[aria-current='page'] {
+    @apply bg-brand-600 text-white hover:bg-brand-700;
+  }
+  .choice {
+    @apply flex cursor-pointer items-start gap-3 rounded-xl border border-slate-300 bg-white p-3 text-sm hover:border-brand-500;
+  }
+  .choice:has(input:checked) {
+    @apply border-brand-600 bg-brand-50 ring-1 ring-brand-600;
+  }
+  .badge {
+    @apply inline-flex items-center rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-semibold text-slate-700;
+  }
+  .sig-canvas {
+    touch-action: none;
+    -webkit-user-select: none;
+    user-select: none;
+    @apply block h-44 w-full cursor-crosshair rounded-xl border-2 border-dashed border-slate-300 bg-white sm:h-52;
+  }
+  .thumb {
+    @apply relative h-20 w-20 overflow-hidden rounded-lg border border-slate-200 bg-slate-100;
+  }
+  .thumb img {
+    @apply h-full w-full object-cover;
+  }
+  .thumb-remove {
+    @apply absolute right-0.5 top-0.5 inline-flex h-7 w-7 items-center justify-center rounded-full bg-black/70 text-sm font-bold text-white;
+  }
+  .result-row {
+    @apply flex items-baseline justify-between gap-4 border-b border-slate-100 py-2 text-sm;
+  }
+  .result-row dd {
+    @apply text-right font-semibold tabular-nums;
+  }
+  .notice {
+    @apply rounded-xl border p-3 text-sm;
+  }
+  .notice-info {
+    @apply notice border-brand-200 bg-brand-50 text-brand-900;
+  }
+  .notice-warn {
+    @apply notice border-amber-300 bg-amber-50 text-amber-900;
+  }
+  .notice-ok {
+    @apply notice border-emerald-300 bg-emerald-50 text-emerald-900;
+  }
+  .notice-error {
+    @apply notice border-red-300 bg-red-50 text-red-900;
+  }
+  .prose-legal h2 {
+    @apply mb-2 mt-6 text-lg font-bold;
+  }
+  .prose-legal p,
+  .prose-legal li {
+    @apply mb-2 text-sm leading-relaxed text-slate-700;
+  }
+  .prose-legal ol,
+  .prose-legal ul {
+    @apply mb-3 list-decimal pl-5;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 100;
+  @apply rounded-lg bg-white px-4 py-2 font-semibold text-brand-700 shadow;
+}
+
+dialog::backdrop {
+  background: rgb(15 23 42 / 0.6);
+}
+
+@media print {
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+}

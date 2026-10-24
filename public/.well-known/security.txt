@@ -1,0 +1,4 @@
+Contact: mailto:kontakt@protokolzdawczy.pl
+Expires: 2027-10-24T00:00:00.000Z
+Preferred-Languages: pl, en
+Canonical: https://protokolzdawczy.pl/.well-known/security.txt
