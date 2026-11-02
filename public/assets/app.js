@@ -39,7 +39,7 @@
   const PDF_SIZE_WARN_BYTES = 3 * 1024 * 1024;
   const TZ = 'Europe/Warsaw';
 
-  const SITE_NAME = typeof CFG.siteName === 'string' ? CFG.siteName.slice(0, 60) : 'ProtokolZdawczy.pl';
+  const SITE_NAME = typeof CFG.siteName === 'string' ? CFG.siteName.slice(0, 60) : 'ProtokolMieszkania.pl';
   const SITE_URL = safeHttpsUrl(CFG.siteUrl) ? CFG.siteUrl.replace(/\/+$/, '') : location.origin;
   const SUPPORT_EMAIL = typeof CFG.supportEmail === 'string' && EMAIL_RE.test(CFG.supportEmail) ? CFG.supportEmail : '';
   const MODE = CFG.payment && CFG.payment.mode === 'stripe' ? 'stripe' : 'free';
