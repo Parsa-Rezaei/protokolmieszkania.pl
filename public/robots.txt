@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://protokolzdawczy.pl/sitemap.xml
+Sitemap: https://protokolmieszkania.pl/sitemap.xml
