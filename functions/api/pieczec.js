@@ -188,7 +188,11 @@ async function handlePost(context) {
   if (s.status !== 'complete' || s.payment_status !== 'paid') {
     return reply(402, { ok: false, code: 'not_paid', message: 'Płatność nie została zakończona.' });
   }
-  if (typeof s.currency !== 'string' || s.currency.toLowerCase() !== 'pln' || !(Number(s.amount_total) >= minAmount)) {
+  // Adaptive Pricing (always on for Payment Links): original PLN amounts are in currency_conversion.
+  const cc = s.currency_conversion && typeof s.currency_conversion === 'object' ? s.currency_conversion : null;
+  const srcCur = cc ? cc.source_currency : s.currency;
+  const srcTotal = cc ? cc.amount_total : s.amount_total;
+  if (typeof srcCur !== 'string' || srcCur.toLowerCase() !== 'pln' || !(Number(srcTotal) >= minAmount)) {
     return reply(402, { ok: false, code: 'not_paid', message: 'Nieprawidłowa kwota płatności.' });
   }
   const created = Number(s.created);
