@@ -10,7 +10,7 @@ const pub = join(dirname(fileURLToPath(import.meta.url)), '..', 'public');
 const icon = (size) => `<html><body style="margin:0"><svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 32 32"><rect width="32" height="32" fill="#1f57c3"/><path d="M9 8h10l4 4v12a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" fill="#fff"/><path d="M11.5 18.5l3 3 6-7" stroke="#1f57c3" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></body></html>`;
 
 const og = `<html><body style="margin:0;width:1200px;height:630px;font-family:'DejaVu Sans',Arial,sans-serif;background:linear-gradient(135deg,#1b3463,#1f57c3);color:#fff;display:flex;flex-direction:column;justify-content:center;padding:0 80px;box-sizing:border-box">
-<div style="font-size:30px;opacity:.85;margin-bottom:18px">ProtokolZdawczy.pl</div>
+<div style="font-size:30px;opacity:.85;margin-bottom:18px">ProtokolMieszkania.pl</div>
 <div style="font-size:66px;font-weight:800;line-height:1.1">Protokół zdawczo-odbiorczy mieszkania</div>
 <div style="font-size:34px;margin-top:26px;opacity:.95">Zdjęcia liczników · Podpis palcem na ekranie · Gotowy PDF</div>
 <div style="font-size:26px;margin-top:40px;background:#10b981;display:inline-block;align-self:flex-start;padding:12px 24px;border-radius:14px">Kalkulator taksy notarialnej i ryczałtu od najmu 2026</div>
